@@ -1,0 +1,120 @@
+@import url("./global.css");
+@import url("./alert/style.css");
+@import url("./avatar/style.css");
+@import url("./badge/style.css");
+@import url("./button/style.css");
+@import url("./card/style.css");
+@import url("./image/style.css");
+@import url("./input/style.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7fbff;
+}
+
+.gradient {
+  width: 100vw;
+  height: 15vh;
+  background-image: url("./backbanner.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--lynx-white);
+}
+
+#header {
+  max-width: 100vw;
+  height: 85vh;
+  text-align: center;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subheading {
+  color: var(--grey-dark);
+}
+.header-btn {
+  text-decoration: none;
+}
+
+.mb {
+  margin-bottom: 5rem;
+}
+section {
+  width: 100%;
+  padding: 30px;
+  border-bottom: 3px solid var(--grey);
+}
+
+section > p {
+  text-decoration: underline;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  max-width: 400px;
+  max-height: 400px;
+}
+.container {
+  max-width: 100vw;
+}
+nav {
+  text-align: center;
+  padding-top: 30px;
+  border-bottom: 3px solid var(--grey);
+  display: none;
+}
+
+nav > a:hover {
+  background-color: var(--primary-light);
+  color: white;
+}
+@media (min-width: 768px) {
+  #header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .subheading {
+    max-width: 600px;
+    font-size: 1.2rem;
+  }
+  .container {
+    display: flex;
+    width: 100vw;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid var(--grey);
+    position: relative;
+    left: 0px;
+    width: 15%;
+    height: 100%;
+  }
+
+  nav > a {
+    text-align: center;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-weight: 800;
+    font-size: larger;
+  }
+
+  .library {
+    width: 80%;
+  }
+}
