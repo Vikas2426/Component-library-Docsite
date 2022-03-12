@@ -90,3 +90,7 @@
 .br-full {
   border-radius: 999px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
