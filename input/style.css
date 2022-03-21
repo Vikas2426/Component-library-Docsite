@@ -49,6 +49,7 @@
 .dropdown-menu {
   padding: 0.7rem;
   font-size: large;
+  outline: none;
 }
 
 .dropdown-item {
@@ -56,7 +57,8 @@
 }
 
 .dropdown-menu-bg {
-  background-color: var(--grey-dark);
-  color: var(--lynx-white);
-  border-color: var(--grey-dark);
+  background-color: var(--primary-light);
+  color: var(--white);
+  border-color: var(--primary-dark);
+  outline: none;
 }

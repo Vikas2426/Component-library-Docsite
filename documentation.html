@@ -12,18 +12,24 @@
 </head>
 
 <body>
+    <div class="gradient fixed-header">
+        <p class="bold font-lg">Simple Component Library</p>
+    </div>
     <div class="container" id="container">
         <nav>
-            <p class="bold font-md"><a href="./index.html" rel="noopener noreferrer">Simple Component Library</a></p>
-
-            <p class="bold font-md">Components:</p>
+            <a href="./index.html" rel="noopener noreferrer">Home</a>
             <a href="#alert" rel="noopener noreferrer">Alert</a>
             <a href="#avatar" rel="noopener noreferrer">Avatar</a>
-            <a href="#badge" rel="noopener noreferrer">Badge</a>
+            <a href="#badge-avatars" rel="noopener noreferrer">Badge on Avatars</a>
+            <a href="#badge-buttons" rel="noopener noreferrer">Badge on Buttons</a>
             <a href="#button" rel="noopener noreferrer">Button</a>
-            <a href="#card" rel="noopener noreferrer">Card</a>
+            <a href="#card-primary" rel="noopener noreferrer">Card (Primary)</a>
+            <a href="#card-secondary" rel="noopener noreferrer">Card (Secondary)</a>
             <a href="#image" rel="noopener noreferrer">Image</a>
-            <a href="#input" rel="noopener noreferrer">Input</a>
+            <a href="#input-text" rel="noopener noreferrer">Input - Text</a>
+            <a href="#input-checkbox" rel="noopener noreferrer">Input - Checkbox</a>
+            <a href="#input-dropdown" rel="noopener noreferrer">Input - Dropdown</a>
+
         </nav>
         <div class="library">
             <section id="alert">
@@ -63,7 +69,6 @@
                 </code></pre>
                 </div>
             </section>
-            <hr />
             <section id="avatar">
                 <p class="component-title">Avatar</p>
                 <div class="font-md component-desc">An avatar is an image that represents the user in an online profile.
@@ -102,7 +107,7 @@
                 </div>
 
             </section>
-            <section id="badge">
+            <section id="badge-avatars">
                 <p class="component-title">Badge - Avatar</p>
                 <div class="font-md component-desc">A badge indicates that an action is required from the user. A badge
                     on
@@ -159,57 +164,75 @@
                 </div>
 
             </section>
-            <section id="badge">
+            <section id="badge-buttons">
                 <p class="component-title">Badge - Button</p>
                 <div class="font-md component-desc">A button badge indicates that user should click the button or after
                     clicking the button the user has received some notifications.</div>
                 <div class="example-container">
 
-                    <button class="btn btn-primary badge-container">
-                        Button
-                        <span class="badge badge-left">5</span>
-                    </button>
-                    <button class="btn btn-primary badge-container">
-                        Button
-                        <span class="badge badge-left-bottom">5</span>
-                    </button>
-                    <button class="btn btn-primary badge-container">
-                        Button
-                        <span class="badge badge-right">5</span>
-                    </button>
-                    <button class="btn btn-primary badge-container">
-                        Button
-                        <span class="badge badge-right-bottom">5</span>
-                    </button>
+                    <span class="badge-container">
+                        <button class="btn btn-primary ">
+                            Button
+                            <span class="badge badge-left">5</span>
+                        </button>
+                    </span>
+                    <span class="badge-container">
+                        <button class="btn btn-secondary">
+                            Button
+                            <span class="badge badge-left-bottom">5</span>
+                        </button>
+                    </span>
+                    <span class="badge-container">
+
+                        <button class="btn btn-disabled">
+                            Button
+                            <span class="badge badge-right">5</span>
+                        </button>
+                    </span>
+                    <span class="badge-container">
+
+                        <button class="btn btn-danger">
+                            Button
+                            <span class="badge badge-right-bottom">5</span>
+                        </button>
+                    </span>
                 </div>
                 <div class="code-container">
 
                     <pre><code class="language-html">
-                            &ltbutton class="btn btn-primary badge-container"&gt
-                                Button
-                                &ltspan class="badge badge-left"&gt5&lt/span&gt
-                            &lt/button&gt
+                            &ltspan class="badge-container"&gt
+                                &ltbutton class="btn btn-primary "&gt
+                                     Button
+                                    &ltspan class="badge badge-left"&gt5&lt/span&gt
+                                &lt/button&gt
+                            &lt/span&gt
                         </code></pre>
 
                     <pre><code class="language-html">
-                            &ltbutton class="btn btn-primary badge-container"&gt
-                             Button
-                              &ltspan class="badge badge-left-bottom"&gt5&lt/span&gt
-                            &lt/button&gt
+                            &ltspan class="badge-container"&gt
+                                &ltbutton class="btn btn-secondary"&gt
+                                    Button
+                                    &ltspan class="badge badge-left-bottom"&gt5&lt/span&gt
+                                &lt/button&gt
+                            &lt/span&gt
                         </code></pre>
 
                     <pre><code class="language-html">
-                            &ltbutton class="btn btn-primary badge-container"&gt
-                             Button
-                             &ltspan class="badge badge-right"&gt5&lt/span&gt
-                            &lt/button&gt
+                            &ltspan class="badge-container"&gt
+                                &ltbutton class="btn btn-disabled"&gt
+                                    Button
+                                    &ltspan class="badge badge-right"&gt5&lt/span&gt
+                                &lt/button&gt
+                            &lt/span&gt
                         </code></pre>
 
                     <pre><code class="language-html">
-                            &ltbutton class="btn btn-primary badge-container"&gt
-                             Button
-                            &ltspan class="badge badge-right-bottom"&gt5&lt/span&gt
-                            &lt/button&gt
+                            &ltspan class="badge-container"&gt
+                                &ltbutton class="btn btn-danger"&gt
+                                    Button
+                                    &ltspan class="badge badge-right-bottom"&gt5&lt/span&gt
+                                &lt/button&gt
+                            &lt/span&gt
                         </code></pre>
                 </div>
             </section>
@@ -268,8 +291,10 @@
                         </code></pre>
                 </div>
             </section>
-            <section id="card">
-                <p>Cards</p>
+            <section id="card-primary">
+                <p class="component-title">Cards - Primary</p>
+                <div class="font-md component-desc">Cards provide the visual representation of creating blocks of
+                    related information to be shared with the user.</div>
                 <div class="example-container">
                     <div class="card">
                         <span class="badge badge-right">5</span>
@@ -346,7 +371,11 @@
         &lt/div&gt
                 </code></pre>
                 </div>
-
+            </section>
+            <section id="card-secondary">
+                <p class="component-title">Cards - Secondary</p>
+                <div class="font-md component-desc">Cards provide the visual representation of creating blocks of
+                    related information to be shared with the user.</div>
                 <div class="example-container">
                     <div class="card">
                         <p class="card-text">
@@ -384,48 +413,48 @@
                 <div class="code-container">
 
                     <pre><code class="language-html">
-        
-        &ltdiv class="card"&gt
-            &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
-             adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit hic at 
-                deserunt. At, temporibus soluta eos magnam rem quos optio
-                 accusantium quibusdam,autem fugiat aliquam sint? Lorem, ipsum 
-                dolor sit amet consectetur adipisicing elit. Reiciendis doloribus 
-                nemo nisi. Vel animi, temporibus eaque sed, voluptates soluta 
-                voluptatibus nesciunt excepturi quisquam 
-                cupiditate omnis provident doloribus dolorum consectetur minima?
-            &lt/p&gt
-        &lt/div&gt
-                </code></pre>
+                    
+                    &ltdiv class="card"&gt
+                        &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit hic at 
+                            deserunt. At, temporibus soluta eos magnam rem quos optio
+                             accusantium quibusdam,autem fugiat aliquam sint? Lorem, ipsum 
+                            dolor sit amet consectetur adipisicing elit. Reiciendis doloribus 
+                            nemo nisi. Vel animi, temporibus eaque sed, voluptates soluta 
+                            voluptatibus nesciunt excepturi quisquam 
+                            cupiditate omnis provident doloribus dolorum consectetur minima?
+                        &lt/p&gt
+                    &lt/div&gt
+                            </code></pre>
 
 
                     <pre><code class="language-html">
-        
-        &ltdiv class="card card-shadow"&gt
-            &ltdiv class="close"&gt
-                &ltbutton class="btn btn-link semibold"&gt X &lt/button&gt
-            &lt/div&gt
-            &ltimg class="card-image" src="./assets/image.jpg"&gt
-            &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
-             adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit hic at
-                 deserunt. At, temporibus soluta eos magnam rem quos optio 
-                 accusantium quibusdam,autem fugiat aliquam sint?
-            &lt/p&gt
-        &lt/div&gt
-                </code></pre>
+                    
+                    &ltdiv class="card card-shadow"&gt
+                        &ltdiv class="close"&gt
+                            &ltbutton class="btn btn-link semibold"&gt X &lt/button&gt
+                        &lt/div&gt
+                        &ltimg class="card-image" src="./assets/image.jpg"&gt
+                        &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit hic at
+                             deserunt. At, temporibus soluta eos magnam rem quos optio 
+                             accusantium quibusdam,autem fugiat aliquam sint?
+                        &lt/p&gt
+                    &lt/div&gt
+                            </code></pre>
 
 
                     <pre><code class="language-html">
-        
-        &ltdiv class="card card-horizontal"&gt
-            &ltimg class="card-image" src="./assets/image.jpg"&gt
-            &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
-             adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit 
-             hic at deserunt. At, temporibus soluta eos magnam rem quos optio 
-             accusantium quibusdam,autem fugiat aliquam sint?
-            &lt/p&gt
-        &lt/div&gt
-                </code></pre>
+                    
+                    &ltdiv class="card card-horizontal"&gt
+                        &ltimg class="card-image" src="./assets/image.jpg"&gt
+                        &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit 
+                         hic at deserunt. At, temporibus soluta eos magnam rem quos optio 
+                         accusantium quibusdam,autem fugiat aliquam sint?
+                        &lt/p&gt
+                    &lt/div&gt
+                            </code></pre>
                 </div>
             </section>
             <section id="image">
@@ -460,28 +489,30 @@
                 </div>
 
             </section>
-            <section id="input">
-                <p class="component-title">Input</p>
+            <section id="input-text">
+                <p class="component-title">Input - Text</p>
                 <div class="font-md component-desc">An alert is used to show a message, this message could be a success,
                     failure, warning etc. kind of
                     information that required user's immediate attention. Choose from different variants of alerts to
                     fit your needs.</div>
-                <div class="input-container">
-                    <input type="text" placeholder="Small text input" class="text-input text-input-sm"
-                        aria-label="Small size text input">
-                </div>
-                <div class="input-container">
-                    <input type="text" placeholder="Default text input" class="text-input"
-                        aria-label="Default size text input">
-                </div>
-                <div class="input-container">
-                    <input type="text" placeholder="Large text input" class="text-input text-input-lg"
-                        aria-label="Large size text input">
-                </div>
-                <div class="input-container">
-                    <input type="text" placeholder="Error text input" class="text-input text-input-error"
-                        aria-label="Default size text input">
-                    <span class="error-text">*Input required</span>
+                <div class="example-container">
+                    <div class="input-container">
+                        <input type="text" placeholder="Small text input" class="text-input text-input-sm"
+                            aria-label="Small size text input">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Default text input" class="text-input"
+                            aria-label="Default size text input">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Large text input" class="text-input text-input-lg"
+                            aria-label="Large size text input">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Error text input" class="text-input text-input-error"
+                            aria-label="Default size text input">
+                        <span class="error-text">*Input required</span>
+                    </div>
                 </div>
                 <div class="code-container">
 
@@ -520,6 +551,15 @@
                 &lt/div&gt
                         </code></pre>
                 </div>
+            </section>
+            <section id="input-checkbox">
+                <p class="component-title">Input - Checkbox</p>
+                <div class="font-md component-desc">An alert is used to show a message, this message could be a
+                    success,
+                    failure, warning etc. kind of
+                    information that required user's immediate attention. Choose from different variants of alerts
+                    to
+                    fit your needs.</div>
                 <div class="example-container">
 
                     <div class="input-container">
@@ -536,19 +576,38 @@
                 <div class="code-container">
 
                     <pre><code class="language-html">
-                        &ltdiv class="input-container"&gt
-                            &ltinput class="checkbox checkbox-sm" type="checkbox" id="vehicle1" 
-                            name="small-checkbox" value="Bike"&gt
-                            &ltlabel for="small-checkbox"&gt Small checkbox&lt/label&gt&ltbr&gt
-                            &ltinput class="checkbox" type="checkbox" id="vehicle2" 
-                            name="default-checkbox" value="Car"&gt
-                            &ltlabel for="default-checkbox"&gt Default checkbox&lt/label&gt&ltbr&gt
-                            &ltinput class="checkbox checkbox-lg" type="checkbox" id="vehicle3" 
-                            name="large-checkbox" value="Boat"&gt
-                            &ltlabel for="large-checkbox"&gt Large Checkbox&lt/label&gt&ltbr&gt
-                        &lt/div&gt
-                        </code></pre>
+                                    &ltdiv class="input-container"&gt
+                                        &ltinput class="checkbox checkbox-sm" type="checkbox" id="vehicle1" 
+                                        name="small-checkbox" value="Bike"&gt
+                                        &ltlabel for="small-checkbox"&gt Small checkbox&lt/label&gt&ltbr&gt
+                                    &lt/div&gt
+                                    </code></pre>
+                    <pre><code class="language-html">
+
+                                    &ltdiv class="input-container"&gt
+                                        &ltinput class="checkbox" type="checkbox" id="vehicle2" 
+                                        name="default-checkbox" value="Car"&gt
+                                        &ltlabel for="default-checkbox"&gt Default checkbox&lt/label&gt&ltbr&gt
+                                    &lt/div&gt
+                                    </code></pre>
+                    <pre><code class="language-html">
+
+                                    &ltdiv class="input-container"&gt
+                                        &ltinput class="checkbox checkbox-lg" type="checkbox" id="vehicle3" 
+                                        name="large-checkbox" value="Boat"&gt
+                                        &ltlabel for="large-checkbox"&gt Large Checkbox&lt/label&gt&ltbr&gt
+                                    &lt/div&gt
+                                    </code></pre>
                 </div>
+            </section>
+            <section id="input-dropdown">
+                <p class="component-title">Input - Dropdown</p>
+                <div class="font-md component-desc">An alert is used to show a message, this message could be a
+                    success,
+                    failure, warning etc. kind of
+                    information that required user's immediate attention. Choose from different variants of alerts
+                    to
+                    fit your needs.</div>
                 <div class="example-container">
                     <div class="input-container">
                         <select class="dropdown-menu">
@@ -572,29 +631,29 @@
                 <div class="code-container">
 
                     <pre><code class="language-html">
-                &ltdiv class="input-container"&gt
-                    &ltselect class="dropdown-menu"&gt
-                        &ltoption class="dropdown-item" value="*"&gtSelect&lt/option&gt
-                        &ltoption class="dropdown-item" value="*"&gtAction&lt/option&gt
-                        &ltoption class="dropdown-item" value="*"&gtAnother action&lt/option&gt
-                        &ltoption class="dropdown-item" value="*"&gtSomething else here&lt/option&gt
-                        &ltoption class="dropdown-item" value="*"&gtSeparated link&lt/option&gt
-                    &lt/select&gt
-                &lt/div&gt
-                        </code></pre>
+                            &ltdiv class="input-container"&gt
+                                &ltselect class="dropdown-menu"&gt
+                                    &ltoption class="dropdown-item" value="*"&gtSelect&lt/option&gt
+                                    &ltoption class="dropdown-item" value="*"&gtAction&lt/option&gt
+                                    &ltoption class="dropdown-item" value="*"&gtAnother action&lt/option&gt
+                                    &ltoption class="dropdown-item" value="*"&gtSomething else here&lt/option&gt
+                                    &ltoption class="dropdown-item" value="*"&gtSeparated link&lt/option&gt
+                                &lt/select&gt
+                            &lt/div&gt
+                                    </code></pre>
 
 
                     <pre><code class="language-html">
-                &ltdiv class="input-container"&gt
-                    &ltselect class="dropdown-menu dropdown-menu-bg"&gt
-                        &ltoption class="dropdown-item" value="*"&gtSelect&lt/option&gt
-                        &ltoption class="dropdown-item" value="*"&gtAction&lt/option&gt
-                        &ltoption class="dropdown-item" value="*"&gtAnother action&lt/option&gt
-                        &ltoption class="dropdown-item" value="*"&gtSomething else here&lt/option&gt
-                        &ltoption class="dropdown-item" value="*"&gtSeparated link&lt/option&gt
-                    &lt/select&gt
-                &lt/div&gt
-                </code></pre>
+                            &ltdiv class="input-container"&gt
+                                &ltselect class="dropdown-menu dropdown-menu-bg"&gt
+                                    &ltoption class="dropdown-item" value="*"&gtSelect&lt/option&gt
+                                    &ltoption class="dropdown-item" value="*"&gtAction&lt/option&gt
+                                    &ltoption class="dropdown-item" value="*"&gtAnother action&lt/option&gt
+                                    &ltoption class="dropdown-item" value="*"&gtSomething else here&lt/option&gt
+                                    &ltoption class="dropdown-item" value="*"&gtSeparated link&lt/option&gt
+                                &lt/select&gt
+                            &lt/div&gt
+                            </code></pre>
                 </div>
             </section>
         </div>
