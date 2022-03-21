@@ -93,6 +93,10 @@ nav > p {
   color: var(--black-light);
 }
 
+nav:hover {
+  border-right: 2px solid var(--black);
+}
+
 nav > a:hover {
   color: var(--black);
 }
@@ -125,7 +129,7 @@ nav > a:hover {
   nav {
     display: flex;
     flex-direction: column;
-    border-right: 3px solid var(--primary);
+    border-right: 2px solid var(--grey-dark);
     position: relative;
     left: 0px;
     width: 15%;
@@ -135,7 +139,7 @@ nav > a:hover {
     text-align: center;
     width: 100%;
     padding: 0.8rem;
-    margin: 0.5rem 0px;
+    margin: 0.3rem 0px;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.2rem;
