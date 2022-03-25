@@ -16,7 +16,7 @@
         <p class="bold font-lg">Simple Component Library</p>
     </div>
     <div class="container" id="container">
-        <nav>
+        <nav class="nav-bar">
             <a href="./index.html" rel="noopener noreferrer">Home</a>
             <a href="#alert" rel="noopener noreferrer">Alert</a>
             <a href="#avatar" rel="noopener noreferrer">Avatar</a>
@@ -31,6 +31,8 @@
             <a href="#input-dropdown" rel="noopener noreferrer">Input - Dropdown</a>
             <a href="#list" rel="noopener noreferrer">List</a>
             <a href="#modal" rel="noopener noreferrer">Modal</a>
+            <a href="#nav" rel="noopener noreferrer">Navigation</a>
+
         </nav>
         <div class="library">
             <section id="alert">
@@ -800,6 +802,83 @@
                                 &ltbutton class="btn btn-secondary"&gtCancel&lt/button&gt
                             &lt/div&gt
                         &lt/div&gt
+                    </code></pre>
+                </div>
+            </section>
+            <section id="nav">
+                <p class="component-title">Navigation</p>
+                <div class="font-md component-desc">
+                </div>
+                <div class="example-container flex-direction-column">
+                    <h2>
+                        Default navigation bar
+                    </h2>
+                    <nav class="navbar">
+                        <h4 class="navbar-branding">Logo here</h4>
+                        <span class="navbar-input-container">
+                            <img src="./nav/assets/Vectorsearch.svg" alt="search" />
+                            <input class="navbar-input" type="search" placeholder="Search">
+                            <button class="navbar-input-btn">Search</button>
+                        </span>
+                        <ul class="navbar-list-group">
+                            <li class="navbar-list-items">Home</li>
+                            <li class="navbar-list-items">About</li>
+                            <li class="navbar-list-items">Project</li>
+                            <li class="navbar-list-items">Contact</li>
+                        </ul>
+                    </nav>
+
+                    <h2>
+                        Dark themed navigation bar
+                    </h2>
+                    <nav class="navbar navbar-dark">
+                        <h4 class="navbar-branding">Logo here</h4>
+                        <span class="navbar-input-container">
+                            <img src="./nav/assets/Vectorsearch.svg" alt="search" />
+                            <input class="navbar-input" type="search" placeholder="Search">
+                            <button class="navbar-input-btn">Search</button>
+                        </span>
+                        <ul class="navbar-list-group">
+                            <li class="navbar-list-items navbar-list-items-dark">Home</li>
+                            <li class="navbar-list-items navbar-list-items-dark">About</li>
+                            <li class="navbar-list-items navbar-list-items-dark">Project</li>
+                            <li class="navbar-list-items navbar-list-items-dark">Contact</li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                        &ltnav class="navbar"&gt
+                            &lth4 class="navbar-branding"&gtLogo here&lt/h4&gt
+                            &ltspan class="navbar-input-container"&gt
+                                &ltimg src="./nav/assets/Vectorsearch.svg" alt="search" /&gt
+                                &ltinput class="navbar-input" type="search" placeholder="Search"&gt
+                                &ltbutton class="navbar-input-btn"&gtSearch&lt/button&gt
+                            &lt/span&gt
+                            &ltul class="navbar-list-group"&gt
+                                &ltli class="navbar-list-items"&gtHome&lt/li&gt
+                                &ltli class="navbar-list-items"&gtAbout&lt/li&gt
+                                &ltli class="navbar-list-items"&gtProject&lt/li&gt
+                                &ltli class="navbar-list-items"&gtContact&lt/li&gt
+                            &lt/ul&gt
+                        &lt/nav&gt
+                    </code></pre>
+                    <pre><code class="language-html">
+                        &ltnav class="navbar navbar-dark"&gt
+                            &lth4 class="navbar-branding"&gtLogo here&lt/h4&gt
+                            &ltspan class="navbar-input-container"&gt
+                                &ltimg src="./nav/assets/Vectorsearch.svg" alt="search" /&gt
+                                &ltinput class="navbar-input" type="search" placeholder="Search"&gt
+                                &ltbutton class="navbar-input-btn"&gtSearch&lt/button&gt
+                            &lt/span&gt
+                            &ltul class="navbar-list-group"&gt
+                                &ltli class="navbar-list-items navbar-list-items-dark"&gtHome&lt/li&gt
+                                &ltli class="navbar-list-items navbar-list-items-dark"&gtAbout&lt/li&gt
+                                &ltli class="navbar-list-items navbar-list-items-dark"&gtProject&lt/li&gt
+                                &ltli class="navbar-list-items navbar-list-items-dark"&gtContact&lt/li&gt
+                            &lt/ul&gt
+                        &lt/nav&gt
                     </code></pre>
                 </div>
             </section>
