@@ -7,6 +7,7 @@
 @import url("./image/style.css");
 @import url("./input/style.css");
 @import url("./list/style.css");
+@import url("./modal/style.css");
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
 html {
@@ -162,4 +163,8 @@ nav > a:hover {
 }
 .flex-direction-column {
   flex-direction: column;
+}
+
+.modal {
+  box-shadow: 0px 0px 5px var(--grey);
 }
