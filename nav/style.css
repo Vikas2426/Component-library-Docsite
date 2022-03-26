@@ -1,15 +1,16 @@
 @import url("../global.css");
 
 .navbar {
-  display: flex;
   background-color: var(--primary);
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem;
   height: 8vh;
   color: var(--lynx-white);
+  position: static;
+  margin-bottom: 5vh;
+  display: flex;
 }
 
 .navbar-input-container {
