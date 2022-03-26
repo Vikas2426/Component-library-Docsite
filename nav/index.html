@@ -2,44 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple CL</title>
+    <link href="../prism.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css2?family=Material+Icons+Outlined&amp;v=1644152679482" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
+    <div class="gradient fixed-header">
+        <p class="bold font-lg">Simple Component Library</p>
+    </div>
+    <div class="container" id="container">
+        <nav class="nav-bar">
+            <a class="nav-links" href="../index.html" rel="noopener noreferrer">Home</a>
+            <a class="nav-links" href="../alert/index.html" rel="noopener noreferrer">Alert</a>
+            <a class="nav-links" href="../avatar/index.html" rel="noopener noreferrer">Avatar</a>
+            <a class="nav-links" href="../badge/index.html" rel="noopener noreferrer">Badge </a>
+            <a class="nav-links" href="../button/index.html" rel="noopener noreferrer">Button</a>
+            <a class="nav-links" href="../card/index.html" rel="noopener noreferrer">Card</a>
+            <a class="nav-links" href="../grid/index.html" rel="noopener noreferrer">Grid</a>
+            <a class="nav-links" href="../image/index.html" rel="noopener noreferrer">Image</a>
+            <a class="nav-links" href="../input/index.html" rel="noopener noreferrer">Input</a>
+            <a class="nav-links" href="../list/index.html" rel="noopener noreferrer">List</a>
+            <a class="nav-links" href="../modal/index.html" rel="noopener noreferrer">Modal</a>
+            <a class="nav-links active" href="#" rel="noopener noreferrer">Navigation</a>
+            <a class="nav-links" href="../rating/index.html" rel="noopener noreferrer">Rating</a>
+            <a class="nav-links" href="../text/index.html" rel="noopener noreferrer">Text</a>
+            <a class="nav-links" href="../toast/index.html" rel="noopener noreferrer">Toast</a>
+        </nav>
+        <div class="library">
+            <section id="navigation">
+                <p class="component-title">Navigation</p>
 
-    <nav class="navbar">
-        <h4 class="navbar-branding">Logo here</h4>
-        <span class="navbar-input-container">
-            <img src="./assets/Vectorsearch.svg" alt="search" />
-            <input class="navbar-input" type="search" placeholder="Search">
-            <button class="navbar-input-btn">Search</button>
-        </span>
-        <ul class="navbar-list-group">
-            <li class="navbar-list-items">Home</li>
-            <li class="navbar-list-items">About</li>
-            <li class="navbar-list-items">Project</li>
-            <li class="navbar-list-items">Contact</li>
-        </ul>
-    </nav>
-    <nav class="navbar navbar-dark">
-        <h4 class="navbar-branding">Logo here</h4>
-        <span class="navbar-input-container">
-            <img src="./assets/Vectorsearch.svg" alt="search" />
-            <input class="navbar-input" type="search" placeholder="Search">
-            <button class="navbar-input-btn">Search</button>
-        </span>
-        <ul class="navbar-list-group">
-            <li class="navbar-list-items navbar-list-items-dark">Home</li>
-            <li class="navbar-list-items navbar-list-items-dark">About</li>
-            <li class="navbar-list-items navbar-list-items-dark">Project</li>
-            <li class="navbar-list-items navbar-list-items-dark">Contact</li>
-        </ul>
-    </nav>
+                <div class="font-md component-desc">
+                    Every website on this planet needs a navigation bar to give the user the ability to surf through
+                    different section, pages and areas of the website.
+                    Our navigation bar gives you the option of including not only links to different pages but also
+                    website branding ans a search bar. Not only this for your website's light and dark theme mode we
+                    have light and dark theme navigation bar.
+                </div>
+                <div class="example-container flex-direction-column">
+                    <h2>
+                        Default navigation bar
+                    </h2>
+                    <nav class="navbar">
+                        <h4 class="navbar-branding">Logo here</h4>
+                        <span class="navbar-input-container">
+                            <img src="./assets/Vectorsearch.svg" alt="search" />
+                            <input class="navbar-input" type="search" placeholder="Search">
+                            <button class="navbar-input-btn">Search</button>
+                        </span>
+                        <ul class="navbar-list-group">
+                            <li class="navbar-list-items">Home</li>
+                            <li class="navbar-list-items">About</li>
+                            <li class="navbar-list-items">Project</li>
+                            <li class="navbar-list-items">Contact</li>
+                        </ul>
+                    </nav>
 
+                    <h2>
+                        Dark themed navigation bar
+                    </h2>
+                    <nav class="navbar navbar-dark">
+                        <h4 class="navbar-branding">Logo here</h4>
+                        <span class="navbar-input-container">
+                            <img src="./assets/Vectorsearch.svg" alt="search" />
+                            <input class="navbar-input" type="search" placeholder="Search">
+                            <button class="navbar-input-btn">Search</button>
+                        </span>
+                        <ul class="navbar-list-group">
+                            <li class="navbar-list-items navbar-list-items-dark">Home</li>
+                            <li class="navbar-list-items navbar-list-items-dark">About</li>
+                            <li class="navbar-list-items navbar-list-items-dark">Project</li>
+                            <li class="navbar-list-items navbar-list-items-dark">Contact</li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                                &ltnav class="navbar"&gt
+                                    &lth4 class="navbar-branding"&gtLogo here&lt/h4&gt
+                                    &ltspan class="navbar-input-container"&gt
+                                        &ltimg src="./assets/Vectorsearch.svg" alt="search" /&gt
+                                        &ltinput class="navbar-input" type="search" placeholder="Search"&gt
+                                        &ltbutton class="navbar-input-btn"&gtSearch&lt/button&gt
+                                    &lt/span&gt
+                                    &ltul class="navbar-list-group"&gt
+                                        &ltli class="navbar-list-items"&gtHome&lt/li&gt
+                                        &ltli class="navbar-list-items"&gtAbout&lt/li&gt
+                                        &ltli class="navbar-list-items"&gtProject&lt/li&gt
+                                        &ltli class="navbar-list-items"&gtContact&lt/li&gt
+                                    &lt/ul&gt
+                                &lt/nav&gt
+                            </code></pre>
+                    <pre><code class="language-html">
+                                &ltnav class="navbar navbar-dark"&gt
+                                    &lth4 class="navbar-branding"&gtLogo here&lt/h4&gt
+                                    &ltspan class="navbar-input-container"&gt
+                                        &ltimg src="./assets/Vectorsearch.svg" alt="search" /&gt
+                                        &ltinput class="navbar-input" type="search" placeholder="Search"&gt
+                                        &ltbutton class="navbar-input-btn"&gtSearch&lt/button&gt
+                                    &lt/span&gt
+                                    &ltul class="navbar-list-group"&gt
+                                        &ltli class="navbar-list-items navbar-list-items-dark"&gtHome&lt/li&gt
+                                        &ltli class="navbar-list-items navbar-list-items-dark"&gtAbout&lt/li&gt
+                                        &ltli class="navbar-list-items navbar-list-items-dark"&gtProject&lt/li&gt
+                                        &ltli class="navbar-list-items navbar-list-items-dark"&gtContact&lt/li&gt
+                                    &lt/ul&gt
+                                &lt/nav&gt
+                            </code></pre>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../prism.js"></script>
 </body>
 
 </html>

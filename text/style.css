@@ -1,0 +1,79 @@
+@import url("../global.css");
+
+p {
+  /* color: black; */
+}
+.text-heading {
+  font-weight: 600;
+  font-size: 4rem;
+  padding: 0.5rem;
+}
+
+.text-sub-heading {
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 0.5rem;
+}
+
+.text-lg {
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+.text-md {
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.text-sm {
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 0.3rem;
+}
+
+.text-gy {
+  color: var(--grey-dark);
+  margin: 0.3rem;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.example-container > p {
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--grey-light);
+  font-weight: 400;
+}

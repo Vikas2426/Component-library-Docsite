@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple CL</title>
+    <link href="../prism.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css2?family=Material+Icons+Outlined&amp;v=1644152679482" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="gradient fixed-header">
+        <p class="bold font-lg">Simple Component Library</p>
+    </div>
+    <div class="container" id="container">
+        <nav class="nav-bar">
+            <a class="nav-links" href="../index.html" rel="noopener noreferrer">Home</a>
+            <a class="nav-links" href="../alert/index.html" rel="noopener noreferrer">Alert</a>
+            <a class="nav-links" href="../avatar/index.html" rel="noopener noreferrer">Avatar</a>
+            <a class="nav-links" href="../badge/index.html" rel="noopener noreferrer">Badge </a>
+            <a class="nav-links" href="../button/index.html" rel="noopener noreferrer">Button</a>
+            <a class="nav-links" href="../card/index.html" rel="noopener noreferrer">Card</a>
+            <a class="nav-links" href="../grid/index.html" rel="noopener noreferrer">Grid</a>
+            <a class="nav-links" href="../image/index.html" rel="noopener noreferrer">Image</a>
+            <a class="nav-links" href="../input/index.html" rel="noopener noreferrer">Input</a>
+            <a class="nav-links" href="../list/index.html" rel="noopener noreferrer">List</a>
+            <a class="nav-links" href="../modal/index.html" rel="noopener noreferrer">Modal</a>
+            <a class="nav-links" href="../nav/index.html" rel="noopener noreferrer">Navigation</a>
+            <a class="nav-links active" href="#" rel="noopener noreferrer">Rating</a>
+            <a class="nav-links" href="../text/index.html" rel="noopener noreferrer">Text</a>
+            <a class="nav-links" href="../toast/index.html" rel="noopener noreferrer">Toast</a>
+        </nav>
+        <div class="library">
+            <section id="rating">
+                <p class="component-title">Rating</p>
+
+                <div class="font-md component-desc">
+                    Got an ecommerce website or a library of data and want users to leave their review, our rating
+                    components lets user give starts to the product and express their satisfaction with your services.
+                    Simple 5 start rating sysem.
+                </div>
+                <div class="example-container flex-direction-column">
+                    <div class="rating-container">
+                        <input class="rating-input" type="radio" id="5-ratings" name="rating" value="5" />
+                        <label class="rating-label" for="5-ratings" class="rating">&#9733;</label>
+                        <input class="rating-input" type="radio" id="4-ratings" name="rating" value="4" />
+                        <label class="rating-label" for="4-ratings" class="rating">&#9733;</label>
+                        <input class="rating-input" type="radio" id="3-ratings" name="rating" value="3" />
+                        <label class="rating-label" for="3-ratings" class="rating">&#9733;</label>
+                        <input class="rating-input" type="radio" id="2-ratings" name="rating" value="2" />
+                        <label class="rating-label" for="2-ratings" class="rating">&#9733;</label>
+                        <input class="rating-input" type="radio" id="1-rating" name="rating" value="1" />
+                        <label class="rating-label" for="1-rating" class="rating">&#9733;</label>
+                    </div>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                        &ltdiv class="rating-container"&gt
+                            &ltinput class="rating-input" type="radio" id="5-ratings" name="rating" value="5" /&gt
+                            &ltlabel class="rating-label" for="5-ratings" class="rating"&gt&#9733;&lt/label&gt
+                            &ltinput class="rating-input" type="radio" id="4-ratings" name="rating" value="4" /&gt
+                            &ltlabel class="rating-label" for="4-ratings" class="rating"&gt&#9733;&lt/label&gt
+                            &ltinput class="rating-input" type="radio" id="3-ratings" name="rating" value="3" /&gt
+                            &ltlabel class="rating-label" for="3-ratings" class="rating"&gt&#9733;&lt/label&gt
+                            &ltinput class="rating-input" type="radio" id="2-ratings" name="rating" value="2" /&gt
+                            &ltlabel class="rating-label" for="2-ratings" class="rating"&gt&#9733;&lt/label&gt
+                            &ltinput class="rating-input" type="radio" id="1-rating" name="rating" value="1" /&gt
+                            &ltlabel class="rating-label" for="1-rating" class="rating"&gt&#9733;&lt/label&gt
+                        &lt/div&gt
+                    </code></pre>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../prism.js"></script>
+</body>
+
+</html>

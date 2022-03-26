@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple CL</title>
+    <link href="../prism.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css2?family=Material+Icons+Outlined&amp;v=1644152679482" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="gradient fixed-header">
+        <p class="bold font-lg">Simple Component Library</p>
+    </div>
+    <div class="container" id="container">
+        <nav class="nav-bar">
+            <a class="nav-links" href="../index.html" rel="noopener noreferrer">Home</a>
+            <a class="nav-links" href="../alert/index.html" rel="noopener noreferrer">Alert</a>
+            <a class="nav-links" href="../avatar/index.html" rel="noopener noreferrer">Avatar</a>
+            <a class="nav-links active" href="#" rel="noopener noreferrer">Badge </a>
+            <a class="nav-links" href="../button/index.html" rel="noopener noreferrer">Button</a>
+            <a class="nav-links" href="../card/index.html" rel="noopener noreferrer">Card</a>
+            <a class="nav-links" href="../grid/index.html" rel="noopener noreferrer">Grid</a>
+            <a class="nav-links" href="../image/index.html" rel="noopener noreferrer">Image</a>
+            <a class="nav-links" href="../input/index.html" rel="noopener noreferrer">Input</a>
+            <a class="nav-links" href="../list/index.html" rel="noopener noreferrer">List</a>
+            <a class="nav-links" href="../modal/index.html" rel="noopener noreferrer">Modal</a>
+            <a class="nav-links" href="../nav/index.html" rel="noopener noreferrer">Navigation</a>
+            <a class="nav-links" href="../rating/index.html" rel="noopener noreferrer">Rating</a>
+            <a class="nav-links" href="../text/index.html" rel="noopener noreferrer">Text</a>
+            <a class="nav-links" href="../toast/index.html" rel="noopener noreferrer">Toast</a>
+        </nav>
+        <div class="library">
+            <section id="badge-avatars">
+                <p class="component-title">Badge - Avatar</p>
+
+                <div class="font-md component-desc">
+                    A badge indicates that an action is required from the user. A badge
+                    on an avatar usually indicates notifications or pending actions to
+                    be taken by the user.
+                </div>
+                <div class="example-container">
+                    <div class="avatar avatar-lg badge-container">
+                        <img id="avatar-img" src="../avatar/assets/avatar-img.jpg" alt="'avatar" loading="lazy" />
+                        <span class="badge primary" data-position="top-left">5</span>
+                    </div>
+                    <div class="avatar avatar-lg badge-container">
+                        <img id="avatar-img" src="../avatar/assets/avatar-img.jpg" alt="'avatar" loading="lazy" />
+                        <span class="badge secondary" data-position="top-right">5</span>
+                    </div>
+                    <div class="avatar avatar-lg badge-container">
+                        <img id="avatar-img" src="../avatar/assets/avatar-img.jpg" alt="'avatar" loading="lazy" />
+                        <span class="badge danger" data-position="bottom-left">5</span>
+                    </div>
+                    <div class="avatar avatar-lg badge-container">
+                        <img id="avatar-img" src="../avatar/assets/avatar-img.jpg" alt="'avatar" loading="lazy" />
+                        <span class="badge action" data-position="bottom-right">5</span>
+                    </div>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                 &ltdiv class="avatar avatar-lg badge-container"&gt
+                     &ltimg id='avatar-img' src='../avatar/assets/avatar-img.jpg' alt="'avatar" /&gt
+                     &ltspan class="badge primary" data-position="top-left"&gt5&lt/span&gt
+                 &lt/div&gt
+                </code></pre>
+
+                    <pre><code class="language-html">
+                             &ltdiv class="avatar avatar-lg badge-container"&gt
+                                 &ltimg id='avatar-img' src='../avatar/assets/avatar-img.jpg' alt="'avatar" /&gt
+                                 &ltspan class="badge secondary" data-position="top-right"&gt5&lt/span&gt
+                             &lt/div&gt
+                        </code></pre>
+
+                    <pre><code class="language-html">
+                            &ltdiv class="avatar avatar-lg badge-container"&gt
+                              &ltimg id='avatar-img' src='../avatar/assets/avatar-img.jpg' alt="'avatar" /&gt
+                              &ltspan class="badge danger" data-position="bottom-left"&gt5&lt/span&gt
+                            &lt/div&gt
+                        </code></pre>
+
+                    <pre><code class="language-html">
+                                &ltdiv class="avatar avatar-lg badge-container"&gt
+                                    &ltimg id='avatar-img' src='../avatar/assets/avatar-img.jpg' alt="'avatar" /&gt
+                                    &ltspan class="badge action" data-position="bottom-right""&gt5&lt/span&gt
+                                &lt/div&gt
+        
+                        </code></pre>
+                </div>
+            </section>
+            <section id="badge-buttons">
+                <p class="component-title">Badge - Button</p>
+
+                <div class="font-md component-desc">
+                    A button badge indicates that user should click the button or after
+                    clicking the button the user has received some notifications.
+                </div>
+                <div class="example-container">
+                    <span class="badge-container">
+                        <button class="btn btn-primary">
+                            Button
+                            <span class="badge danger" data-position="top-left">5</span>
+                        </button>
+                    </span>
+                    <span class="badge-container">
+                        <button class="btn btn-secondary">
+                            Button
+                            <span class="badge dark" data-position="top-right">5</span>
+                        </button>
+                    </span>
+                    <span class="badge-container">
+                        <button class="btn btn-disabled">
+                            Button
+                            <span class="badge danger" data-position="bottom-left">5</span>
+                        </button>
+                    </span>
+                    <span class="badge-container">
+                        <button class="btn btn-danger">
+                            Button
+                            <span class="badge primary-light" data-position="bottom-right">5</span>
+                        </button>
+                    </span>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                            &ltspan class="badge-container"&gt
+                                &ltbutton class="btn btn-primary "&gt
+                                     Button
+                                    &ltspan class="badge danger" data-position="top-left"&gt5&lt/span&gt
+                                &lt/button&gt
+                            &lt/span&gt
+                        </code></pre>
+
+                    <pre><code class="language-html">
+                            &ltspan class="badge-container"&gt
+                                &ltbutton class="btn btn-secondary"&gt
+                                    Button
+                                    &ltspan class="badge dark" data-position="top-right"&gt5&lt/span&gt
+                                &lt/button&gt
+                            &lt/span&gt
+                        </code></pre>
+
+                    <pre><code class="language-html">
+                            &ltspan class="badge-container"&gt
+                                &ltbutton class="btn btn-disabled"&gt
+                                    Button
+                                    &ltspan class="badge danger" data-position="bottom-left"&gt5&lt/span&gt
+                                &lt/button&gt
+                            &lt/span&gt
+                        </code></pre>
+
+                    <pre><code class="language-html">
+                            &ltspan class="badge-container"&gt
+                                &ltbutton class="btn btn-danger"&gt
+                                    Button
+                                    &ltspan class="badge primary-light" data-position="bottom-right"&gt5&lt/span&gt
+                                &lt/button&gt
+                            &lt/span&gt
+                        </code></pre>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../prism.js"></script>
+</body>
+
+</html>

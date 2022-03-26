@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple CL</title>
+    <link href="../prism.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css2?family=Material+Icons+Outlined&amp;v=1644152679482" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="gradient fixed-header">
+        <p class="bold font-lg">Simple Component Library</p>
+    </div>
+    <div class="container" id="container">
+        <nav class="nav-bar">
+            <a class="nav-links" href="../index.html" rel="noopener noreferrer">Home</a>
+            <a class="nav-links" href="../alert/index.html" rel="noopener noreferrer">Alert</a>
+            <a class="nav-links" href="../avatar/index.html" rel="noopener noreferrer">Avatar</a>
+            <a class="nav-links" href="../badge/index.html" rel="noopener noreferrer">Badge </a>
+            <a class="nav-links" href="../button/index.html" rel="noopener noreferrer">Button</a>
+            <a class="nav-links active" href="#" rel="noopener noreferrer">Card</a>
+            <a class="nav-links" href="../grid/index.html" rel="noopener noreferrer">Grid</a>
+            <a class="nav-links" href="../image/index.html" rel="noopener noreferrer">Image</a>
+            <a class="nav-links" href="../input/index.html" rel="noopener noreferrer">Input</a>
+            <a class="nav-links" href="../list/index.html" rel="noopener noreferrer">List</a>
+            <a class="nav-links" href="../modal/index.html" rel="noopener noreferrer">Modal</a>
+            <a class="nav-links" href="../nav/index.html" rel="noopener noreferrer">Navigation</a>
+            <a class="nav-links" href="../rating/index.html" rel="noopener noreferrer">Rating</a>
+            <a class="nav-links" href="../text/index.html" rel="noopener noreferrer">Text</a>
+            <a class="nav-links" href="../toast/index.html" rel="noopener noreferrer">Toast</a>
+        </nav>
+        <div class="library">
+            <section id="card-primary">
+                <p class="component-title">Cards - Primary</p>
+
+                <div class="font-md component-desc">
+                    Cards provide the visual representation of creating blocks of
+                    related information to be shared with the user.
+                </div>
+                <div class="example-container">
+                    <div class="card">
+                        <span class="badge" data-position="top-right">5</span>
+                        <img class="card-image" src="./assets/image.jpg" />
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                            quidem. Repellat, excepturi! Suscipit hic at deserunt. At,
+                            temporibus soluta eos magnam rem quos optio accusantium
+                            quibusdam, autem fugiat aliquam sint?
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="close">
+                            <button class="btn btn-link semibold">X</button>
+                        </div>
+                        <img class="card-image" src="./assets/image.jpg" />
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                            quidem. Repellat, excepturi! Suscipit hic at deserunt. At,
+                            temporibus soluta eos magnam rem quos optio accusantium
+                            quibusdam, autem fugiat aliquam sint?
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img class="card-image image-underlay" src="./assets/image.jpg" />
+                        <p class="card-text text-overlay font-md semibold">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                            quidem. Repellat, excepturi! Suscipit hic at deserunt. At,
+                            temporibus soluta eos magnam rem quos optio accusantium
+                            quibusdam, autem fugiat aliquam sint?
+                        </p>
+                    </div>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+        &ltdiv class="card"&gt
+            &ltspan class="badge" data-position="top-right"&gt5&lt/span&gt
+            &ltimg class="card-image" src="./assets/image.jpg"&gt
+            &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
+             adipisicing elit. Iusto, quidem. Repellat, excepturi! Suscipit
+            hic at deserunt. At, temporibus soluta eos magnam rem
+             quos optio accusantium quibusdam, autem fugiat
+            aliquam sint?&lt/p&gt
+        &lt/div&gt
+                </code></pre>
+
+                    <pre><code class="language-html">
+        &ltdiv class="card"&gt
+            &ltdiv class="close"&gt
+              &ltbutton class="btn btn-link semibold"&gtX&lt/button&gt
+            &lt/div&gt
+            &ltimg class="card-image" src="./assets/image.jpg"&gt
+            &ltp class="card-text"&gtLorem ipsum dolor, sit amet 
+            consectetur adipisicing elit. Iusto, quidem. Repellat,
+            excepturi! Suscipit hic at deserunt. At, temporibus 
+            soluta eos magnam rem quos optio accusantium quibusdam, 
+            autem fugiat aliquam sint?&lt/p&gt
+        &lt/div&gt
+                </code></pre>
+
+                    <pre><code class="language-html">
+        
+        &ltdiv class="card"&gt
+            &ltimg class="card-image image-underlay" src="./assets/image.jpg"&gt
+            &ltp class="card-text text-overlay font-md semibold"&gtLorem ipsum dolor,
+             sit amet consectetur adipisicing elit. Iusto, quidem. Repella excepturi!
+              Suscipit hic at deserunt. At, temporibus soluta eos magnam rem quos optio
+              accusantium quibusdam, autem fugiat
+            aliquam sint?&lt/p&gt
+        &lt/div&gt
+                </code></pre>
+                </div>
+            </section>
+            <section id="card-secondary">
+                <p class="component-title">Cards - Secondary</p>
+
+                <div class="font-md component-desc">
+                    Cards provide the visual representation of creating blocks of
+                    related information to be shared with the user.
+                </div>
+                <div class="example-container">
+                    <div class="card">
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                            quidem. Repellat, excepturi! Suscipit hic at deserunt. At,
+                            temporibus soluta eos magnam rem quos optio accusantium
+                            quibusdam, autem fugiat aliquam sint? Lorem, ipsum dolor sit
+                            amet consectetur adipisicing elit. Reiciendis doloribus nemo
+                            nisi. Vel animi, temporibus eaque sed, voluptates soluta
+                            voluptatibus nesciunt excepturi quisquam cupiditate omnis
+                            provident doloribus dolorum consectetur minima?
+                        </p>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="close">
+                            <button class="btn btn-link semibold">X</button>
+                        </div>
+                        <img class="card-image" src="./assets/image.jpg" />
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                            quidem. Repellat, excepturi! Suscipit hic at deserunt. At,
+                            temporibus soluta eos magnam rem quos optio accusantium
+                            quibusdam, autem fugiat aliquam sint?
+                        </p>
+                    </div>
+                    <div class="card card-horizontal">
+                        <img class="card-image" src="./card/assets/image.jpg" />
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                            quidem. Repellat, excepturi! Suscipit hic at deserunt. At,
+                            temporibus soluta eos magnam rem quos optio accusantium
+                            quibusdam, autem fugiat aliquam sint?
+                        </p>
+                    </div>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                    
+                    &ltdiv class="card"&gt
+                        &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit hic at 
+                            deserunt. At, temporibus soluta eos magnam rem quos optio
+                             accusantium quibusdam,autem fugiat aliquam sint? Lorem, ipsum 
+                            dolor sit amet consectetur adipisicing elit. Reiciendis doloribus 
+                            nemo nisi. Vel animi, temporibus eaque sed, voluptates soluta 
+                            voluptatibus nesciunt excepturi quisquam 
+                            cupiditate omnis provident doloribus dolorum consectetur minima?
+                        &lt/p&gt
+                    &lt/div&gt
+                            </code></pre>
+
+                    <pre><code class="language-html">
+                    
+                    &ltdiv class="card card-shadow"&gt
+                        &ltdiv class="close"&gt
+                            &ltbutton class="btn btn-link semibold"&gt X &lt/button&gt
+                        &lt/div&gt
+                        &ltimg class="card-image" src="./assets/image.jpg"&gt
+                        &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit hic at
+                             deserunt. At, temporibus soluta eos magnam rem quos optio 
+                             accusantium quibusdam,autem fugiat aliquam sint?
+                        &lt/p&gt
+                    &lt/div&gt
+                            </code></pre>
+
+                    <pre><code class="language-html">
+                    
+                    &ltdiv class="card card-horizontal"&gt
+                        &ltimg class="card-image" src="./assets/image.jpg"&gt
+                        &ltp class="card-text"&gtLorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Iusto, quidem. Repellat,excepturi! Suscipit 
+                         hic at deserunt. At, temporibus soluta eos magnam rem quos optio 
+                         accusantium quibusdam,autem fugiat aliquam sint?
+                        &lt/p&gt
+                    &lt/div&gt
+                            </code></pre>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../prism.js"></script>
+</body>
+
+</html>

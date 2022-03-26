@@ -1,14 +1,7 @@
 @import url("./global.css");
-@import url("./alert/style.css");
-@import url("./avatar/style.css");
-@import url("./badge/style.css");
+
 @import url("./button/style.css");
-@import url("./card/style.css");
-@import url("./image/style.css");
-@import url("./input/style.css");
-@import url("./list/style.css");
-@import url("./modal/style.css");
-@import url("./nav/style.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
 html {
@@ -16,12 +9,12 @@ html {
 }
 
 body {
-  height: 100vh;
   width: 100vw;
   font-family: "Source Serif Pro", serif;
   background-color: #f7fbff;
-  overflow: hidden;
+  overflow-x: hidden;
 }
+
 .gradient {
   width: 100vw;
   height: 15vh;
@@ -59,10 +52,16 @@ body {
 .mb {
   margin-bottom: 5rem;
 }
+
+.mb > a {
+  text-decoration: none;
+  margin: 0.2rem;
+}
 section {
-  width: 100%;
+  max-width: 100%;
   padding: 1.5rem;
-  border-bottom: 3px solid var(--grey);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .component-title {
@@ -98,9 +97,6 @@ section {
   border-right: 2px solid var(--black);
 }
 
-.nav-bar > a:hover {
-  color: var(--black);
-}
 .example-container {
   display: flex;
   justify-content: space-evenly;
@@ -109,9 +105,20 @@ section {
   align-items: center;
 }
 
-.library {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+.flex-direction-column {
+  flex-direction: column;
+}
+.example-container > h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.modal {
+  box-shadow: 0px 0px 5px var(--grey);
+}
+.navbar {
+  position: static;
+  margin-bottom: 5vh;
+  display: flex;
 }
 
 @media (min-width: 768px) {
@@ -136,7 +143,7 @@ section {
     width: 13%;
   }
 
-  .nav-bar > a {
+  .nav-links {
     text-align: left;
     width: 100%;
     padding: 0.5rem;
@@ -145,12 +152,19 @@ section {
     text-decoration: none;
     font-weight: 800;
     font-size: 1.2rem;
+    font-style: normal;
     color: var(--grey-dark);
+  }
+
+  .nav-links:hover,
+  .active {
+    color: var(--black);
+    font-style: italic;
   }
 
   .library {
     width: 87%;
-    max-height: 100vh;
+    min-height: 100vh;
   }
   .example-container {
     flex-wrap: nowrap;
@@ -160,16 +174,4 @@ section {
     width: 70%;
     margin: auto;
   }
-}
-.flex-direction-column {
-  flex-direction: column;
-}
-
-.modal {
-  box-shadow: 0px 0px 5px var(--grey);
-}
-.navbar {
-  position: static;
-  margin-bottom: 5vh;
-  display: flex;
 }

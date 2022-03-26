@@ -19,14 +19,14 @@
     <div class="container" id="container">
         <nav class="nav-bar">
             <a class="nav-links" href="../index.html" rel="noopener noreferrer">Home</a>
-            <a class="nav-links" href="../alert/index.html" rel="noopener noreferrer">Alert</a>
+            <a class="nav-links active" href="#" rel="noopener noreferrer">Alert</a>
             <a class="nav-links" href="../avatar/index.html" rel="noopener noreferrer">Avatar</a>
-            <a class="nav-links" href="../badge/index.html" rel="noopener noreferrer">Badge </a>
+            <a class="nav-links" href="../badge/index.html#badge-avatars" rel="noopener noreferrer">Badge </a>
             <a class="nav-links" href="../button/index.html" rel="noopener noreferrer">Button</a>
-            <a class="nav-links" href="../card/index.html" rel="noopener noreferrer">Card</a>
+            <a class="nav-links" href="../card/index.html#card-primary" rel="noopener noreferrer">Card</a>
             <a class="nav-links" href="../grid/index.html" rel="noopener noreferrer">Grid</a>
-            <a class="nav-links active" href="#" rel="noopener noreferrer">Image</a>
-            <a class="nav-links" href="../input/index.html" rel="noopener noreferrer">Input</a>
+            <a class="nav-links" href="../image/index.html" rel="noopener noreferrer">Image</a>
+            <a class="nav-links" href="../input/index.html#input-text" rel="noopener noreferrer">Input</a>
             <a class="nav-links" href="../list/index.html" rel="noopener noreferrer">List</a>
             <a class="nav-links" href="../modal/index.html" rel="noopener noreferrer">Modal</a>
             <a class="nav-links" href="../nav/index.html" rel="noopener noreferrer">Navigation</a>
@@ -35,9 +35,8 @@
             <a class="nav-links" href="../toast/index.html" rel="noopener noreferrer">Toast</a>
         </nav>
         <div class="library">
-
-            <section id="image">
-                <p class="component-title">Image</p>
+            <section id="alert">
+                <p class="component-title">Alerts</p>
 
                 <div class="font-md component-desc">
                     An alert is used to show a message, this message could be a success,
@@ -45,35 +44,39 @@
                     immediate attention. Choose from different variants of alerts to fit
                     your needs.
                 </div>
-                <div class="example-container">
-                    <div class="image-container">
-                        <img class="image" src="./assets/image.jpg" alt="contemporary" loading="lazy" />
-                    </div>
-                    <div class="image-container">
-                        <img class="image image-round" src="./assets/image.jpg" alt="contemporary" loading="lazy" />
-                    </div>
-                </div>
+                <div class="alert primary">This is a primary alert!</div>
+                <div class="alert secondary">This is a secondary alert!</div>
+                <div class="alert action">This is a action alert!</div>
+                <div class="alert danger">This is a danger alert!</div>
                 <div class="code-container">
                     <pre><code class="language-html">
-                
-            &ltdiv&gt
-                &ltimg class="image" src="./assets/image.jpg" alt="contemporary" &gt
-            &lt/div&gt
-                        </code></pre>
+        &ltdiv class="alert primary"&gt
+                        This is a primary alert!
+                    &lt/div&gt
+                    </code></pre>
 
                     <pre><code class="language-html">
-                        
-                    &ltdiv&gt
-                      &ltimg class="image image-round" src="./assets/image.jpg" alt="contemporary" &gt
+                    &ltdiv class="alert secondary"&gt
+                        This is a secondary alert!
+                        &lt/div&gt
+                    </code></pre>
+
+                    <pre><code class="language-html">
+                    &ltdiv class="alert action"&gt
+                        This is a action alert!
+                        &lt/div&gt
+                    </code></pre>
+
+                    <pre><code class="language-html">
+                    &ltdiv class="alert danger"&gt
+                    This is a danger alert!
                     &lt/div&gt
-                                </code></pre>
+                </code></pre>
                 </div>
             </section>
-
         </div>
     </div>
     <script src="../prism.js"></script>
-
 </body>
 
 </html>

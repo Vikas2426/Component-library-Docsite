@@ -20,12 +20,12 @@
         <nav class="nav-bar">
             <a class="nav-links" href="../index.html" rel="noopener noreferrer">Home</a>
             <a class="nav-links" href="../alert/index.html" rel="noopener noreferrer">Alert</a>
-            <a class="nav-links" href="../avatar/index.html" rel="noopener noreferrer">Avatar</a>
+            <a class="nav-links  active" href="#" rel="noopener noreferrer">Avatar</a>
             <a class="nav-links" href="../badge/index.html" rel="noopener noreferrer">Badge </a>
             <a class="nav-links" href="../button/index.html" rel="noopener noreferrer">Button</a>
             <a class="nav-links" href="../card/index.html" rel="noopener noreferrer">Card</a>
             <a class="nav-links" href="../grid/index.html" rel="noopener noreferrer">Grid</a>
-            <a class="nav-links active" href="#" rel="noopener noreferrer">Image</a>
+            <a class="nav-links" href="../image/index.html" rel="noopener noreferrer">Image</a>
             <a class="nav-links" href="../input/index.html" rel="noopener noreferrer">Input</a>
             <a class="nav-links" href="../list/index.html" rel="noopener noreferrer">List</a>
             <a class="nav-links" href="../modal/index.html" rel="noopener noreferrer">Modal</a>
@@ -35,45 +35,48 @@
             <a class="nav-links" href="../toast/index.html" rel="noopener noreferrer">Toast</a>
         </nav>
         <div class="library">
-
-            <section id="image">
-                <p class="component-title">Image</p>
+            <section id="avatar">
+                <p class="component-title">Avatar</p>
 
                 <div class="font-md component-desc">
-                    An alert is used to show a message, this message could be a success,
-                    failure, warning etc. kind of information that required user's
-                    immediate attention. Choose from different variants of alerts to fit
-                    your needs.
+                    An avatar is an image that represents the user in an online profile.
+                    Choose from different sizes of avatars that suits your webpage
+                    layout.
                 </div>
                 <div class="example-container">
-                    <div class="image-container">
-                        <img class="image" src="./assets/image.jpg" alt="contemporary" loading="lazy" />
+                    <div class="avatar avatar-lg">
+                        <img id="avatar-img" src="./assets/avatar-img.jpg" alt="'avatar" loading="lazy" />
                     </div>
-                    <div class="image-container">
-                        <img class="image image-round" src="./assets/image.jpg" alt="contemporary" loading="lazy" />
+                    <div class="avatar avatar-md">
+                        <img id="avatar-img" src="./assets/avatar-img.jpg" alt="'avatar" loading="lazy" />
+                    </div>
+                    <div class="avatar avatar-sm">
+                        <img id="avatar-img" src="./assets/avatar-img.jpg" alt="'avatar" loading="lazy" />
                     </div>
                 </div>
                 <div class="code-container">
                     <pre><code class="language-html">
-                
-            &ltdiv&gt
-                &ltimg class="image" src="./assets/image.jpg" alt="contemporary" &gt
-            &lt/div&gt
+                    &ltdiv class="avatar avatar-lg"&gt
+                    &ltimg id='avatar-img' src='./assets/avatar-img.jpg' alt="'avatar" /&gt
+                    &lt/div&gt
+                </code></pre>
+
+                    <pre><code class="language-html">
+                    &ltdiv class="avatar avatar-md"&gt
+                  &ltimg id='avatar-img' src='./assets/avatar-img.jpg' alt="'avatar" /&gt
+                &lt/div&gt
                         </code></pre>
 
                     <pre><code class="language-html">
-                        
-                    &ltdiv&gt
-                      &ltimg class="image image-round" src="./assets/image.jpg" alt="contemporary" &gt
+                    &ltdiv class="avatar avatar-sm"&gt
+                    &ltimg id='avatar-img' src='./assets/avatar-img.jpg' alt="'avatar" /&gt
                     &lt/div&gt
-                                </code></pre>
+                </code></pre>
                 </div>
             </section>
-
         </div>
     </div>
     <script src="../prism.js"></script>
-
 </body>
 
 </html>

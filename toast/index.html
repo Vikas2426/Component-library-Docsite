@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple CL</title>
+    <link href="../prism.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css2?family=Material+Icons+Outlined&amp;v=1644152679482" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="gradient fixed-header">
+        <p class="bold font-lg">Simple Component Library</p>
+    </div>
+    <div class="container" id="container">
+        <nav class="nav-bar">
+            <a class="nav-links" href="../index.html" rel="noopener noreferrer">Home</a>
+            <a class="nav-links" href="../alert/index.html" rel="noopener noreferrer">Alert</a>
+            <a class="nav-links" href="../avatar/index.html" rel="noopener noreferrer">Avatar</a>
+            <a class="nav-links" href="../badge/index.html" rel="noopener noreferrer">Badge </a>
+            <a class="nav-links" href="../button/index.html" rel="noopener noreferrer">Button</a>
+            <a class="nav-links" href="../card/index.html" rel="noopener noreferrer">Card</a>
+            <a class="nav-links" href="../grid/index.html" rel="noopener noreferrer">Grid</a>
+            <a class="nav-links" href="../image/index.html" rel="noopener noreferrer">Image</a>
+            <a class="nav-links" href="../input/index.html" rel="noopener noreferrer">Input</a>
+            <a class="nav-links" href="../list/index.html" rel="noopener noreferrer">List</a>
+            <a class="nav-links" href="../modal/index.html" rel="noopener noreferrer">Modal</a>
+            <a class="nav-links" href="../nav/index.html" rel="noopener noreferrer">Navigation</a>
+            <a class="nav-links" href="../rating/index.html" rel="noopener noreferrer">Rating</a>
+            <a class="nav-links" href="../text/index.html" rel="noopener noreferrer">Text</a>
+            <a class="nav-links active" href="#" rel="noopener noreferrer">Toast</a>
+        </nav>
+        <div class="library">
+            <section id="toast">
+                <p class="component-title">Toast</p>
+
+                <div class="font-md component-desc">
+                    Successful execution, failure of execution of a request or notification received from server all
+                    these tasks are perfomred using toasts.
+                    Toasts can be shown anywhere in the website so we have toasts for every requirement possible.
+                    Select a toast that best suits your requirement and integrate with your website.
+                </div>
+                <div class="example-container">
+                    <div class="toast-container" data-position="top-left">
+                        <div class="toast primary"> Toast Top Left</div>
+                    </div>
+                    <div class="toast-container" data-position="top-right">
+                        <div class="toast secondary"> Toast Top Right</div>
+                    </div>
+                    <div class="toast-container" data-position="top-center">
+                        <div class="toast danger"> Toast Top Center</div>
+                    </div>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+    &ltdiv class="toast-container" data-position="top-left"&gt
+        &ltdiv class="toast primary"&gt Toast Top Left&lt/div&gt
+    &lt/div&gt
+   
+                </code></pre>
+
+                    <pre><code class="language-html">
+&ltdiv class="toast-container" data-position="top-right"&gt
+    &ltdiv class="toast secondary"&gt Toast Top Right&lt/div&gt
+&lt/div&gt
+
+                </code></pre>
+
+                    <pre><code class="language-html">
+        
+    &ltdiv class="toast-container" data-position="top-center"&gt
+        &ltdiv class="toast danger"&gt Toast Top Center&lt/div&gt
+    &lt/div&gt
+                </code></pre>
+                </div>
+                <div class="example-container">
+                    <div class="toast-container" data-position="bottom-left">
+                        <div class="toast action"> Toast Bottom Left</div>
+                    </div>
+                    <div class="toast-container" data-position="bottom-right">
+                        <div class="toast dark"> Toast Bottom Right</div>
+                    </div>
+                    <div class="toast-container" data-position="bottom-center">
+                        <div class="toast primary-light"> Toast Bottom Center</div>
+                    </div>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                                        &ltdiv class="toast-container" data-position="bottom-left"&gt
+                                            &ltdiv class="toast action"&gt Toast Bottom Left&lt/div&gt
+                                        &lt/div&gt
+                                       
+                                                    </code></pre>
+
+                    <pre><code class="language-html">
+                                    &ltdiv class="toast-container" data-position="bottom-right"&gt
+                                        &ltdiv class="toast dark"&gt Toast Bottom Right&lt/div&gt
+                                    &lt/div&gt
+                                    
+                                                    </code></pre>
+
+                    <pre><code class="language-html">
+                                            
+                                        &ltdiv class="toast-container" data-position="bottom-center"&gt
+                                            &ltdiv class="toast primary-light"&gt Toast Bottom Center&lt/div&gt
+                                        &lt/div&gt
+                                                    </code></pre>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../prism.js"></script>
+</body>
+
+</html>

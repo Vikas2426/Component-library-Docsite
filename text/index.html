@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple CL</title>
+    <link href="../prism.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css2?family=Material+Icons+Outlined&amp;v=1644152679482" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="gradient fixed-header">
+        <p class="bold font-lg">Simple Component Library</p>
+    </div>
+    <div class="container" id="container">
+        <nav class="nav-bar">
+            <a class="nav-links" href="../index.html" rel="noopener noreferrer">Home</a>
+            <a class="nav-links" href="../alert/index.html" rel="noopener noreferrer">Alert</a>
+            <a class="nav-links" href="../avatar/index.html" rel="noopener noreferrer">Avatar</a>
+            <a class="nav-links" href="../badge/index.html" rel="noopener noreferrer">Badge </a>
+            <a class="nav-links" href="../button/index.html" rel="noopener noreferrer">Button</a>
+            <a class="nav-links" href="../card/index.html" rel="noopener noreferrer">Card</a>
+            <a class="nav-links" href="../grid/index.html" rel="noopener noreferrer">Grid</a>
+            <a class="nav-links" href="../image/index.html" rel="noopener noreferrer">Image</a>
+            <a class="nav-links" href="../input/index.html" rel="noopener noreferrer">Input</a>
+            <a class="nav-links" href="../list/index.html" rel="noopener noreferrer">List</a>
+            <a class="nav-links" href="../modal/index.html" rel="noopener noreferrer">Modal</a>
+            <a class="nav-links" href="../nav/index.html" rel="noopener noreferrer">Navigation</a>
+            <a class="nav-links" href="../rating/index.html" rel="noopener noreferrer">Rating</a>
+            <a class="nav-links active" href="#" rel="noopener noreferrer">Text</a>
+            <a class="nav-links" href="../toast/index.html" rel="noopener noreferrer">Toast</a>
+        </nav>
+        <div class="library">
+            <section id="text">
+                <p class="component-title">Text</p>
+
+                <div class="font-md component-desc">
+                    A text utitlity component is very useful in formatting and styling different section texts and
+                    making them attention seeking as well as easy to read and understand.
+                    We provide a range of text utitlities which will all the purpose of your website.
+                </div>
+                <div class="example-container flex-direction-column">
+                    <h2>
+                        Headings - Texts
+                    </h2>
+                    <p class="text-heading">Heading</p>
+                    <p class="text-sub-heading">Sub-heading</p>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                        &ltp class="text-heading"&gtHeading&lt/p&gt
+                    </code></pre>
+
+                    <pre><code class="language-html">
+                        &ltp class="text-sub-heading"&gtSub-heading&lt/p&gt
+                    </code></pre>
+                </div>
+                <div class="example-container flex-direction-column">
+
+                    <h2>
+                        Text - Size
+                    </h2>
+                    <p class="text-lg">Large Text</p>
+                    <p class="text-md">Medium Text</p>
+                    <p class="text-sm">Small Text</p>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                    &ltp class="text-lg"&gtLarge Text&lt/p&gt
+                </code></pre>
+
+                    <pre><code class="language-html">
+                    &ltp class="text-md"&gtMedium Text&lt/p&gt
+                </code></pre>
+
+                    <pre><code class="language-html">
+                      &ltp class="text-sm"&gtSmall Text&lt/p&gt
+                    </code></pre>
+                </div>
+                <div class="example-container flex-direction-column">
+
+                    <h2>
+                        Greyed-out Text
+                    </h2>
+                    <p class="text-gy">Gray Text</p>
+
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                    &ltp class="text-gy"&gtGray Text&lt/p&gt
+                    </code></pre>
+                </div>
+
+                <div class="example-container flex-direction-column">
+                    <h2>
+                        Text - Alignment
+                    </h2>
+                    <p class="text-left">Left aligned Text</p>
+                    <p class="text-center">Centered Text</p>
+                    <p class="text-right">Right aligned Text</p>
+                    <p class="text-justify">Justified Text</p>
+                    <div class="code-container">
+                        <pre><code class="language-html">
+                                    &ltp class="text-left"&gtLeft aligned Text&lt/p&gt
+                                </code></pre>
+
+                        <pre><code class="language-html">
+                            &ltp class="text-center"&gtCentered Text&lt/p&gt
+                        </code></pre>
+
+                        <pre><code class="language-html">
+                            &ltp class="text-right"&gtRight aligned Text&lt/p&gt
+                        </code></pre>
+
+                        <pre><code class="language-html">
+                            &ltp class="text-justify"&gtJustified Text&lt/p&gt
+                                        </code></pre>
+                    </div>
+                    <h2>
+                        Text with No wrapping
+                    </h2>
+                    <p class="text-nowrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet aliquam
+                        optio cum, rem
+                        eius facilis esse quibusdam ipsa dolor officia voluptatem ipsum enim illo nam voluptates quidem
+                        delectus fuga?
+                        Text</p>
+                    <div class="code-container">
+                        <pre><code class="language-html">
+                                                &ltp class="text-nowrap"&gtLorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet aliquam optio cum,
+                                                rem
+                                                eius facilis esse quibusdam ipsa dolor officia voluptatem ipsum enim illo nam voluptates quidem delectus fuga?
+                                                Text&lt/p&gt
+                                                                </code></pre>
+                    </div>
+                    <h2>
+                        Text Casing
+                    </h2>
+                    <p class="text-lowercase">LOWERCASE Text</p>
+                    <p class="text-uppercase">uppercase text</p>
+                    <p class="text-capitalize">capitalised text</p>
+                </div>
+                <div class="code-container">
+                    <pre><code class="language-html">
+                                &ltp class="text-lowercase"&gtLOWERCASE Text&lt/p&gt
+                            </code></pre>
+
+                    <pre><code class="language-html">
+                        &ltp class="text-uppercase"&gtuppercase text&lt/p&gt
+                        
+                    </code></pre>
+                    <pre><code class="language-html">
+                        
+                        &ltp class="text-capitalize"&gtcapitalised text&lt/p&gt
+                                    </code></pre>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../prism.js"></script>
+</body>
+
+</html>
