@@ -4,7 +4,7 @@
 
 ### [Visit here.](https://simple-cl.netlify.app/)
 
-![cl-docsite](cl-docsite.png)
+![image](https://user-images.githubusercontent.com/36814488/161286572-dbfcb6b7-6586-4ed0-8d4e-e9e095011f81.png)
 
 #### Component Library:
 
